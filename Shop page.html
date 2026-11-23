@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop with Ghetto Hustler</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="stylesheet" href="Styling.css">
+    <link rel="stylesheet" href="mpho.css">
+   
+   
+    <link rel="stylesheet" href="shop-extra.css">
+    <!-- Product photos, names, descriptions and prices . -->
+    <script src="shop.js" defer></script>
+</head>
+<body class="shop-site">
+    <div class="announcement-bar">
+        Free Shipping on Orders Over R1000
+    </div>
+    <header>
+        <h1><span class="brand-green">GHETTO HUSTLER</span> <span class="brand-white">CLOTHINGBRAND</span> <span class="brand-red">PTY LTD</span></h1>
+        <nav>
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Shop page.html">Shop</a></li>
+            <li><a href="Contact page.html">Contact</a></li>
+        </ul>
+        </nav>
+ </header>
+
+    
+    <main class="shop-page">
+    <section class="shop-hero" aria-labelledby="shop-title">
+      <span class="flag-stripe" aria-hidden="true"></span>
+      <p class="eyebrow">GHETTO HUSTLER CLOTHING</p>
+      <h2 id="shop-title">Wear the Hustle.</h2>
+      <p>Streetwear for those who move with confidence. Find your style, build your cart and send your order securely through WhatsApp.</p>
+      <a class="shop-cta" href="#collection">Explore collection</a>
+    </section>
+
+    <section class="collection-section" id="collection">
+      <div class="section-heading">
+        <div><p class="eyebrow">FIND YOUR LOOK</p><h2>Shop the collection</h2></div>
+        <div class="shop-actions"><span class="cart-count" id="cart-count" aria-live="polite">Cart: 0 items</span><button type="button" class="open-cart-button" id="open-cart">🛒 View Cart (<span id="cart-button-count">0</span>)</button></div>
+      </div>
+      <div class="shop-tools">
+        <label class="search-wrap" for="product-search"><span aria-hidden="true">⌕</span><input type="search" id="product-search" placeholder="Search hoodies, tees, caps..." autocomplete="off"><button type="button" id="clear-search" aria-label="Clear search" hidden>×</button></label>
+        <div class="category-filters" role="group" aria-label="Filter by product category">
+          <button class="filter-button active" type="button" data-category="All" aria-pressed="true">All</button>
+          <button class="filter-button" type="button" data-category="Hoodies" aria-pressed="false">Hoodies</button>
+          <button class="filter-button" type="button" data-category="Sweaters" aria-pressed="false">Sweaters</button>
+          <button class="filter-button" type="button" data-category="T-Shirts" aria-pressed="false">T-Shirts</button>
+          <button class="filter-button" type="button" data-category="Headwear" aria-pressed="false">Headwear</button>
+          <button class="filter-button" type="button" data-category="Bags" aria-pressed="false">Bags</button>
+        </div>
+      </div>
+      <p id="results-message" class="results-message" aria-live="polite">Showing all products</p>
+      <div class="product-grid" id="product-grid"></div>
+      <p class="empty-results" id="empty-results" hidden>No products match your search. Try another word or category.</p>
+    </section>
+
+<hr>
+    <footer>
+        <p><div>&copy;All rights reserved</div></p>
+                <p><div> 2026 Ghetto Hustler Clothing.</div></p>
+      </footer>
+
+    <script type="application/json" id="product-catalogue">
+[
+    {
+        "image": "IMG-20261018-WA0018.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Italian Culture,Ghetto Flavour(pocket logo)",
+        "price": 400,
+        "colors": [
+            "White"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0019.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "A Statement of Culture,Identity and Style",
+        "price": 400,
+        "colors": [
+            "White"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0020.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Every direction Leads to Hustle(pocket logo)",
+        "price": 400,
+        "colors": [
+            "Yellow"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0021.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Every direction Leads to Hustle(pocket logo)",
+        "price": 400,
+        "colors": [
+            "Mint Green"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0022.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Every direction Leads to Hustle(pocket logo)",
+        "price": 400,
+        "colors": [
+            "Pink"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0023.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Every direction Leads to Hustle(pocket logo)",
+        "price": 400,
+        "colors": [
+            "Peach"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0024.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Every direction Leads to Hustle(pocket logo)",
+        "price": 400,
+        "colors": [
+            "Light grey"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0025.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Every direction Leads to Hustle(pocket logo)",
+        "price": 400,
+        "colors": [
+               "Light Green"
+        ]
+        
+    },
+    {
+        "image": "IMG-20261018-WA0026.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Every direction Leads to Hustle(Small left chest logo)",
+        "price": 400,
+        "colors": [
+            "Light Grey"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0027.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Every direction Leads to Hustle(Small left chest logo)",
+        "price": 400,
+        "colors": [
+            "Blue"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0028.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Every direction Leads to Hustle(Small left chest logo)",
+        "price": 400,
+        "colors": [
+            "Black"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0031.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Every direction Leads to Hustle(Small left chest logo)",
+        "price": 400,
+        "colors": [
+            "Brown"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0032.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Every direction Leads to Hustle(Small left chest logo)",
+        "price": 400,
+        "colors": [
+            "White "
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0034.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Italian Culture,Ghetto Flavour",
+        "price": 400,
+        "colors": [
+            "Pink"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0035.jpg",
+        "category": "T-Shirts",
+        "name": "Ghetto Hustler T-Shirt ",
+        "description": "Ghetto Roots,Hustler Mindset",
+        "price": 200,
+        "colors": [
+            "Black"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0036.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Every direction Leads to Hustle(Small left chest logo)",
+        "price": 400,
+        "colors": [
+            "Yellow"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0037.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Ghetto Roots.Hustler Mindset",
+        "price": 400,
+        "colors": [
+            "Green"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0038.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "You can take me out of the Ghetto but you can't take the Ghetto out of me",
+        "price": 400,
+        "colors": [
+            "Green"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0039.jpg",
+        "category": "Sweaters",
+        "name": "Ghetto Hustler Crew-Neck Sweater ",
+        "description": "Ghetto Love(blue)",
+        "price": 380,
+        "colors": [
+            "White"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0040.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Ghetto Roots.Hustler Mindset",
+        "price": 400,
+        "colors": [
+            "Light Grey"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0041.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Every direction Leads to Hustle(Small left chest logo)",
+        "price": 400,
+        "colors": [
+            "Peach"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0043.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Ghetto Roots.Hustler Mindset",
+        "price": 400,
+        "colors": [
+            "Peach"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0044.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Italian Culture,Ghetto Flavour",
+        "price": 400,
+        "colors": [
+            "Yellow"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0045.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Italian Culture,Ghetto Flavour",
+        "price": 400,
+        "colors": [
+            "Light Grey"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0047.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Every direction Leads to Hustle(Small left chest logo)",
+        "price": 400,
+        "colors": [
+            "Pink"
+        ]
+    },
+    
+    {
+        "image": "IMG-20261018-WA0051.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Italian Culture,Ghetto Flavour(back logo)",
+        "price": 400,
+        "colors": [
+            "Light Green"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0053.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Ghetto Love",
+        "price": 400,
+        "colors": [
+            "Pink"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0054.jpg",
+        "category": "Sweaters",
+        "name": "Ghetto Hustler Sweater ",
+        "description": "Ghetto Hustler-325is Sweater",
+        "price": 380,
+        "colors": [
+            "Black"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0055.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Every direction Leads to Hustle(Small left chest logo)",
+        "price": 400,
+        "colors": [
+            "Red"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0056.jpg",
+        "category": "Sweaters",
+        "name": "Italian Culture Ghetto Flavour Sweater ",
+        "description": "Italian Culture,Ghetto Flavour Black",
+        "price": 380,
+        "colors": [
+            "Black"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0057.jpg",
+        "category": "T-Shirts",
+        "name": "Ghetto Hustler T-Shirt ",
+        "description": "Two Hearts.One Hustle",
+        "price": 200,
+        "colors": [
+            "White"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0058.jpg",
+        "category": "Sweaters",
+        "name": "Ghetto Roots  Hustler Mindset Sweater ",
+        "description": "Ghetto Roots,Hustler Mindset Black",
+        "price": 380,
+        "colors": [
+            "Black"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0059.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Ghetto Roots.Hustler Mindset",
+        "price": 400,
+        "colors": [
+            "Pink"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0061.jpg",
+        "category": "T-Shirts",
+        "name": "Ghetto Hustler T-Shirt ",
+        "description": "Two Hears.One Hustle(White & Blue)",
+        "price": 200,
+        "colors": [
+            "White "
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0063.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Every direction Leads to Hustle(Small left chest logo)",
+        "price": 400,
+        "colors": [
+            "Light Green"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0064.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Italian Culture,Ghetto Flavour",
+        "price": 400,
+        "colors": [
+            "Black"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0067.jpg",
+        "category": "T-Shirts",
+        "name": "Ghetto Hustler T-Shirt ",
+        "description": "Ghetto Roots.HustLer Mindset",
+        "price": 200,
+        "colors": [
+            "White"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0068.jpg",
+        "category": "T-Shirts",
+        "name": "Ghetto Hustler T-Shirt ",
+        "description": "Ghetto Roots.HustLer Mindset",
+        "price": 200,
+        "colors": [
+            "Pink"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0069.jpg",
+        "category": "T-Shirts",
+        "name": "Ghetto Hustler T-Shirt ",
+        "description": "Italian Culture,Ghetto Flavour",
+        "price": 200,
+        "colors": [
+            "White"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0070.jpg",
+        "category": "Sweaters",
+        "name": "Ghetto Hustler  Sweater ",
+        "description": "Ghetto Hustler",
+        "price": 380,
+        "colors": [
+            "White"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0071.jpg",
+        "category": "T-Shirts",
+        "name": "Ghetto Hustler T-Shirt ",
+        "description": "Italian Culture,Ghetto Flavour",
+        "price": 200,
+        "colors": [
+            "White"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0072.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Italian Culture,Ghetto Flavour",
+        "price": 400,
+        "colors": [
+            "Yellow"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0073.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Ghetto Roots.Hustler Mindset",
+        "price": 400,
+        "colors": [
+            "Black"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0074.jpg",
+        "category": "Sweaters",
+        "name": "Ghetto Roots Hustler Mindset Sweater ",
+        "description": "Ghetto Roots,Hustler Mindset",
+        "price": 380,
+        "colors": [
+            "White"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0075.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Ghetto Hustler",
+        "price": 400,
+        "colors": [
+            "Black"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0076.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Ghetto Roots.Hustler Mindset",
+        "price": 400,
+        "colors": [
+            "Yellow"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0077.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Ghetto Hustler",
+        "price": 400,
+        "colors": [
+            "Red"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0078.jpg",
+        "category": "Sweaters",
+        "name": "Italian Culture – Ghetto Flavour Sweater ",
+        "description": " Italian Culture Ghetto Flavour white ",
+        "price": 380,
+        "colors": [
+            "White"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0079.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Two hearts.One Hustle",
+        "price": 400,
+        "colors": [
+            "Red"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0082.jpg",
+        "category": "Sweaters",
+        "name": "Ghetto Hustler  Sweater ",
+        "description": "Ghetto Hustler-325is",
+        "price": 380,
+        "colors": [
+            "White"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0083.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Ghetto Love",
+        "price": 400,
+        "colors": [
+            "Red"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0086.jpg",
+        "category": "Sweaters",
+        "name": "Ghetto Hustler Sweater ",
+        "description": "Ghetto Hustler Pool ball",
+        "price": 380,
+        "colors": [
+            "White"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0087.jpg",
+        "category": "Sweaters",
+        "name": "Ghetto Hustler Sweater ",
+        "description": "Two Hearts.One Hustle",
+        "price": 380,
+        "colors": [
+            "White"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0088.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Ghetto Roots.Hustler Mindset",
+        "price": 400,
+        "colors": [
+            "White"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0091.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Ghetto Love",
+        "price": 400,
+        "colors": [
+            "Pink"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0092.jpg",
+        "category": "Sweaters",
+        "name": "Ghetto Hustler  Sweater(Red) ",
+        "description": "Ghetto Love",
+        "price": 380,
+        "colors": [
+            "White"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0098.jpg",
+        "category": "Headwear",
+        "name": "Ghetto Hustler Cap ",
+        "description": "Take the risk or lose the chance",
+        "price": 150,
+        "colors": [
+            "Brown Stripes"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0099.jpg",
+        "category": "Headwear",
+        "name": "Ghetto Hustler Cap ",
+        "description": "Take the risk or lose the chance",
+        "price": 150,
+        "colors": [
+            "Red Stripes"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0100.jpg",
+        "category": "Headwear",
+        "name": "Ghetto Hustler Cap ",
+        "description": "Take the risk or lose the chance",
+        "price": 150,
+        "colors": [
+            "Dark Red Stripes"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0102.jpg",
+        "category": "Headwear",
+        "name": "Ghetto Hustler Cap ",
+        "description": "Take the risk or lose the chance",
+        "price": 150,
+        "colors": [
+            "Grey Stripes"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0103.jpg",
+        "category": "Headwear",
+        "name": "Ghetto Hustler Cap ",
+        "description": "Ghetto Hustler",
+        "price": 150,
+        "colors": [
+            "Black"
+        ]
+    },
+    
+    {
+        "image": "IMG-20261018-WA0108.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Take the risk or lose the chance",
+        "price": 400,
+        "colors": [
+            "Blue"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0113.jpg",
+        "category": "Bags",
+        "name": "Ghetto Hustler  Bag ",
+        "description": "Ghetto Hustler side bag ",
+        "price": 150,
+        "colors": [
+            "light brown"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0114.jpg",
+        "category": "T-Shirts",
+        "name": "Ghetto Hustler T-Shirt ",
+        "description": "Two Hearts.One Hustle",
+        "price": 200,
+        "colors": [
+            "Black"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0116.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Ghetto Hustler-325is",
+        "price": 400,
+        "colors": [
+            "Yellow"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0117.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Ghetto Hustler-325is",
+        "price": 400,
+        "colors": [
+            "Light Grey"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0119.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Ghetto Hustler-325is",
+        "price": 400,
+        "colors": [
+            "White"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0120.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Ghetto Hustler-325is",
+        "price": 400,
+        "colors": [
+            "Light Blue"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0122.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Ghetto Hustler-325is",
+        "price": 400,
+        "colors": [
+            "Black"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0123.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Ghetto Hustler-325is",
+        "price": 400,
+        "colors": [
+            "Dark Blue"
+        ]
+    },
+    
+    {
+        "image": "IMG-20261018-WA0127.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Ghetto Hustler-325is",
+        "price": 400,
+        "colors": [
+            "Red"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0128.jpg",
+        "category": "Headwear",
+        "name": "Ghetto Hustler Cap ",
+        "description": "Ghetto Hustler Stay Focus",
+        "price": 150,
+        "colors": [
+            "Brown"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0129.jpg",
+        "category": "Headwear",
+        "name": "Ghetto Hustler Cap ",
+        "description": "Ghetto Hustler ",
+        "price": 150,
+        "colors": [
+            "Black"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0130.jpg",
+        "category": "T-Shirts",
+        "name": "Ghetto Hustler T-Shirt ",
+        "description": "Pantsula Golf T-shirt",
+        "price": 200,
+        "colors": [
+            "Grey"
+        ]
+    },
+    {
+        "image": "IMG-20261018-WA0131.jpg",
+        "category": "Headwear",
+        "name": "Ghetto Hustler Cap ",
+        "description": "Ghetto Hustler",
+        "price": 150,
+        "colors": [
+            "Black"
+        ]
+    },
+    {
+        "image": "IMG-20261021-WA0049.jpg",
+        "category": "Hoodies",
+        "name": "Ghetto Hustler Graphic Hoodie ",
+        "description": "Every direction Leads to Hustle(Pocket Logo)",
+        "price": 400,
+        "colors": [
+            "White"
+        ]
+    },
+    {
+        "image": "IMG-20261021-WA0051.jpg",
+        "category": "Headwear",
+        "name": "Ghetto Hustler Cap ",
+        "description": "Ghetto Hustler-325is",
+        "price": 150,
+        "colors": [
+            "Black"
+        ]
+    },
+    
+    {
+        "image": "IMG-20261021-WA0102.jpg",
+        "category": "Headwear",
+        "name": "Ghetto Hustler Cap ",
+        "description": "Ghetto Hustler Money Face",
+        "price": 150,
+        "colors": [
+            "Red"
+        ]
+    },
+    {
+        "image": "IMG-20261021-WA0103.jpg",
+        "category": "T-Shirts",
+        "name": "Ghetto Hustler T-Shirt ",
+        "description": "Ghetto Hustler Money face ",
+        "price": 200,
+        "colors": [
+            "White"
+        ]
+    },
+    {
+        "image": "IMG-20261021-WA0114.jpg",
+        "category": "T-Shirts",
+        "name": "Ghetto Hustler T-Shirt ",
+        "description": "Ghetto Hustler Stay Focused-325is",
+        "price": 200,
+        "colors": [
+            "White"
+        ]
+    }
+]
+    </script>
+
+</body>
+</html>
